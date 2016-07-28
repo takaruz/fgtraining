@@ -1,0 +1,9 @@
+wget https://github.com/phpredis/phpredis/archive/php7.zip
+unzip php7.zip
+cd phpredis-php7
+phpize
+./configure
+make
+make install
+ls /usr/local/lib/php/extensions/no-debug-non-zts-20151012/
+echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini

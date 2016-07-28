@@ -1,0 +1,20 @@
+<?php
+
+    $servername = "";
+    $port = "";
+
+    // Create connection
+    $redis = new Redis();
+    
+    try {
+        
+        $redis->connect($servername, $port);
+        echo $redis->ping();
+        
+    } catch (Exception $e) {
+        
+        echo "Connection failed: $e";
+        
+    }
+    
+?>
