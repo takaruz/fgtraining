@@ -1,7 +1,7 @@
 <?php
 
-    $servername = "mongo";
-    $port = 27017;
+    $servername = "";
+    $port = "";
     
     try {
         

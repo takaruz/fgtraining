@@ -28,6 +28,9 @@ RUN docker-php-ext-install curl && \
 # Enable mod rewrite and ssl
 RUN a2enmod rewrite && a2enmod ssl
 
+# Copy public_html
+COPY public_html /var/www/html
+
 # mod user www-data to id 1000 (fix bug on mac osx)
 RUN usermod -u 1000 www-data
 

@@ -1,7 +1,7 @@
 <?php
 
-    $servername = "redis";
-    $port = 6379;
+    $servername = "";
+    $port = "";
 
     // Create connection
     $redis = new Redis();
